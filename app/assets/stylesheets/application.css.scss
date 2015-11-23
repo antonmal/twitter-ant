@@ -17,6 +17,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-div.status {
+.status {
   margin: 10px;
+}
+
+.username {
+  color: #4099FF;
+  font-size: 1.2em;
+}
+
+.user-bio {
+  margin-top: 20px;
+  color: #333;
+  font-style: italic;
 }
