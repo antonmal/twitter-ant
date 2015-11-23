@@ -10,9 +10,10 @@ gem 'jquery-rails'
 # !!! Anton: Turbolinks also interferes with jQuery, so I removed it
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'sprockets-rails', '~> 2.3', '>= 2.3.3'
 
 gem 'bcrypt', '~> 3.1.10'
-
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
