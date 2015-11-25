@@ -1,0 +1,18 @@
+<% flash_types = {
+  success: 'alert-success',
+  notice: 'alert-info',
+  alert: 'alert-warning',
+  error: 'alert-danger',
+  other: 'alert-warning'
+  } %>
+
+<% flash.each do |type, msg| %>
+  <% if flash_types.keys.include? type.to_sym %>
+    <%= content_tag :div, class: "alert alert-dismissible #{flash_types[type.to_sym]}", role: 'alert' do %>
+      <button type="button" class="close" data-dismiss="alert"  aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <%= msg %>
+    <% end %>
+  <% else %>
+    <%= content_tag :div, "#{type}: #{msg}", class: "alert #{flash_types[:other]}" %>
+  <% end %>
+<% end %>
